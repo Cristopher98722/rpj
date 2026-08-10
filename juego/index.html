@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Aventura RPG</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      try {
+        var c = document.createElement('canvas');
+        if (!c.getContext) {
+          document.open('text/html', 'replace');
+          document.write('<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">' +
+            '<title>Navegador no compatible</title>' +
+            '<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;' +
+            'background:#14211a;color:#e8f5e9;font-family:Segoe UI,Arial,sans-serif;text-align:center;}' +
+            '.caja{max-width:520px;padding:48px 40px;background:#1d2b23;border:1px solid #3b5a44;' +
+            'border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.5);}' +
+            'h1{font-size:30px;margin:0 0 14px;color:#81c784;}' +
+            'p{font-size:16px;line-height:1.5;margin:0;}</style></head><body>' +
+            '<div class="caja"><h1>Navegador no compatible</h1>' +
+            '<p>Este juego necesita un navegador moderno con canvas. Usa Chrome, Edge, Firefox o Safari actualizados.</p>' +
+            '</div></body></html>');
+          document.close();
+        }
+      } catch (err) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="game-wrap">
+    <canvas id="game" width="1280" height="720"></canvas>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/sfx.js"></script>
+  <script src="js/assets.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/net.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/enemies.js"></script>
+  <script src="js/chest.js"></script>
+  <script src="js/shop.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
